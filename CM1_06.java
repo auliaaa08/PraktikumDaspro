@@ -36,6 +36,7 @@ public class CM1_06 {
         double nilaiAkhir2 = (nilaiUts2 * 0.3) + (nilaiUas2 * 0.4) + (nilaiTugas2 * 0.3);
         double nilaiRataRata = (nilaiAkhir1 + nilaiAkhir2) / 2;
 
+        /* Status nilai akhir 1 dan 2 (lulus/tidak lulus) */
         String status1 = (nilaiAkhir1 >= 60) ? "Lulus" : "Tidak Lulus";
         String status2 = (nilaiAkhir2 >= 60) ? "Lulus" : "Tidak Lulus";
 
@@ -43,6 +44,7 @@ public class CM1_06 {
         String huruf1, huruf2, kualifikasi;
         double nilaiSetara;
 
+        /* Kategori Nilai Huruf Matkul 1 */
         if (80 < nilaiAkhir1 && nilaiAkhir1 <= 100) {
             huruf1 = "A";
             nilaiSetara = 4.0;
@@ -76,6 +78,7 @@ public class CM1_06 {
             huruf1 = "Invalid";
         }
 
+        /* Kategori Nilai Huruf Matkul 2 */
         if (80 < nilaiAkhir2 && nilaiAkhir2 <= 100) {
             huruf2 = "A";
             nilaiSetara = 4.0;
