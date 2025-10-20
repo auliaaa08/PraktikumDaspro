@@ -52,7 +52,7 @@ public class CM1_06 {
         } else if (73 < nilaiAkhir1 && nilaiAkhir1 <= 80) {
             huruf1 = "B+";
             nilaiSetara = 3.5;
-            kualifikasi = "Baik";
+            kualifikasi = "Lebih dari baik";
         } else if (65 < nilaiAkhir1 && nilaiAkhir1 <= 73) {
             huruf1 = "B";
             nilaiSetara = 3;
@@ -60,21 +60,20 @@ public class CM1_06 {
         } else if (60 < nilaiAkhir1 && nilaiAkhir1 <= 65) {
             huruf1 = "C+";
             nilaiSetara = 2.5;
-            kualifikasi = "Baik";
+            kualifikasi = "Lebih dari cukup";
         } else if (50 < nilaiAkhir1 && nilaiAkhir1 <= 60) {
             huruf1 = "C";
             nilaiSetara = 2;
-            kualifikasi = "Baik";
+            kualifikasi = "Cukup";
         } else if (39 < nilaiAkhir1 && nilaiAkhir1 <= 50) {
             huruf1 = "D";
             nilaiSetara = 1;
-            kualifikasi = "Baik";
+            kualifikasi = "Kurang";
         } else if (nilaiAkhir1 >= 0 && nilaiAkhir1 <= 39) {
             huruf1 = "E";
             nilaiSetara = 0;
             kualifikasi = "Gagal";
-        }
-        else { 
+        } else {
             huruf1 = "Invalid";
         }
 
@@ -107,8 +106,7 @@ public class CM1_06 {
             huruf2 = "E";
             nilaiSetara = 0;
             kualifikasi = "Gagal";
-        }
-        else {
+        } else {
             huruf2 = "Invalid";
         }
 
@@ -121,13 +119,13 @@ public class CM1_06 {
         if (nilaiAkhir2 >= 60) {
             status2 = "Lulus";
         } else {
-            status2 = "Tidak Lulus"; 
+            status2 = "Tidak Lulus";
         }
-        
+
         /* Rata-rata dan Status Semester (Nested if) */
-        double rataRata = (nilaiAkhir1 + nilaiAkhir2) /2;
+        double rataRata = (nilaiAkhir1 + nilaiAkhir2) / 2;
         String statusSemester;
-        
+
         if (status1.equals("Lulus") && status2.equals("Lulus")) {
             if (rataRata >= 70) {
                 statusSemester = "Lulus";
@@ -148,5 +146,5 @@ public class CM1_06 {
         System.out.println("Struktur Data\t\t\t\t" + nilaiUts2 + "\t" + nilaiUas2 + "\t" + nilaiTugas2 + "\t" + nilaiAkhir2 + "\t\t\t" + huruf2 + "\t\t" + status2);
         System.out.println("\nRata-rata Nilai Akhir: " + rataRata);
         System.out.println("Status Semester: " + statusSemester);
-    } 
+    }
 }
