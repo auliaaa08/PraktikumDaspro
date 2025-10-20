@@ -11,7 +11,7 @@ public class CM1_06 {
         System.out.print("Nama\t: ");
         String nama = sc.nextLine();
         System.out.print("NIM\t: ");
-        double NIM = sc.nextDouble();
+        String NIM = sc.nextLine();
 
         /* Input Nilai UTS, nilai UAS, dan nilai tugas pada mata kuliah 1 */
         System.out.println("\n--- Mata Kuliah 1: Algoritma dan Pemrograman --- ");
